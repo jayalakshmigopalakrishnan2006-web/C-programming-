@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+
+    // Bitwise XOR returns 0 if both numbers are equal
+    if ((num1 ^ num2) == 0) {
+        printf("Both inputs are equal.\n");
+    } else {
+        printf("Inputs are not equal.\n");
+    }
+
+    return 0;
+}
